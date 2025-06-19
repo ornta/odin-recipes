@@ -1,0 +1,92 @@
+/** RESET **/
+
+html{
+    background-color: #FAF7F2;
+    box-sizing: border-box;
+    font-family: Monospace, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+
+/** STYLE **/
+
+.recipe-container {
+    margin: 25px auto 0;
+    position: relative;
+    padding: 16px;
+    text-align: center;
+    width: 692px;
+}
+
+.recipe {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.recipe:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+
+.background-color{
+    position: absolute;
+    background: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card-shadow {
+    position: absolute;
+    z-index: -2;
+    background-color: #fff;
+    box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
+    height: 1px;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    width: 80%;
+}
+
+
+.recipe-title {
+    flex: 1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: 'Copperplate', serif;
+    font-size: 60px;
+}
+
+.recipe-image {
+    background: red;
+    width: 282px;
+    height: 361px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-image img {
+    height: 100%;
+    width: auto;
+}
