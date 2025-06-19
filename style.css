@@ -18,8 +18,19 @@ a {
     font-size: 16px;
 }
 
+ul, h1, h2, h3, h4, h5, h6 {
+    margin: 16px auto;
+}
 
 /** STYLE **/
+
+.bg-white {
+    background-color: #fff;
+}
+
+.subtle {
+    color: #aaa;
+}
 
 h1 {
     font-family: 'Courier New', serif;
@@ -27,18 +38,25 @@ h1 {
 }
 
 .recipe-container {
-    margin: 25px auto 0;
+    margin: 25px auto;
     position: relative;
     padding: 16px;
     text-align: center;
     width: 692px;
 }
 
+.home {
+    color: gray;
+    border: 1px solid gray;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
 .recipe {
-    background-color: #fff;
     position: relative;
     z-index: 1;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -51,9 +69,8 @@ h1 {
 }
 
 
-.background-color{
+.background-card{
     position: absolute;
-    background: white;
     top: 0;
     right: 0;
     bottom: 0;
@@ -64,7 +81,6 @@ h1 {
 .card-shadow {
     position: absolute;
     z-index: -2;
-    background-color: #fff;
     box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
     height: 1px;
     left: 10%;
@@ -73,12 +89,17 @@ h1 {
     width: 80%;
 }
 
+.recipe-text {
+    text-align: left;
+    font-family: "Copperplate", serif;
+    font-size: 20px;
+}
 
 .recipe-title {
     flex: 1;
     padding-top: 24px;
     padding-bottom: 24px;
-    font-family: 'Copperplate', serif;
+    font-family: 'Courier New', serif;
     font-size: 60px;
 }
 
@@ -91,13 +112,13 @@ h1 {
     justify-content: center;
 }
 
-.recipe-image img {
+img {
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
-.subtle {
-    color: #aaa;
+.w-auto {
+    width: auto;
 }
 
 .card-number {
